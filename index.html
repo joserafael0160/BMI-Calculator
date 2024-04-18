@@ -3,13 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="resources/favicon.png">
   <title>BMI-Calculator</title> 
   <meta name="description" content="A free and easy-to-use BMI calculator, ideal for any device, be it a computer or mobile browser, equipped with all the most commonly used features.">
   <meta name="keywords" content="BMI, BMI calculator, body mass index, body mass index calculator, health">
   <meta name="author" content="José Rafael">
 </head>
 <body>
-  
+  <h1>BMI Calculator</h1>
+  <main>
+    <form action="post">
+      <div>
+        <label for="age">Age</label>
+        <input type="number" id="age" min="10"  required placeholder="Enter your age">
+      </div>
+      <div>
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" min="1" max="3" step="0.01" required placeholder="Enter your height">
+      </div>
+      <div>
+        <label for="weight">Weight (kg)</label> 
+        <input type="number" id="weight" min="10" max="200" step="0.1" required placeholder="Enter your weight">
+      </div>
+      <div>
+        <input type="radio" id="man" class="image-radio" name="sex">
+        <label for="man"><img src="resources/icon-man.png" alt="man"></label>
+        <input type="radio" id="woman" class="image-radio" name="sex">
+        <label for="woman"><img src="resources/icon-woman.png" alt="woman"></label>
+      </div>
+      <button type="submit">Calculate BMI</button>
+    </form>
+
+  </main>
 </body>
 </html>

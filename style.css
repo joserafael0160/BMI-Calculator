@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+body { 
+  background: rgb(75, 69, 190);
+  background: linear-gradient(90deg, rgba(45,43,79,1) 0%, rgba(43,117,102,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+h1 {
+  color: #000;
+  background-color: #aef;
+  margin: 10px; 
+  border-radius: 10px; 
+  padding: 5px 10px;  
+
+}
+
+main {
+  background-color: #eee; 
+  width: 90%;     
+  padding: 20px;
+}
+div {
+  margin: 20px; 
+}
+label {
+  font-size: 30px;
+}
+input {
+  height: 100%; 
+  width: 70%;
+}
+
+.image-radio {
+  display: none;
+}
+.image-radio + label {
+  cursor: pointer;
+}
+
+.image-radio:checked + label {
+  outline: 2px solid blue;
+}

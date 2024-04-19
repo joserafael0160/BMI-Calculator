@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
 }
 
 body { 
@@ -15,36 +15,119 @@ body {
 
 h1 {
   color: #000;
-  background-color: #aef;
+  background-color: rgb(255, 255, 255);
   margin: 10px; 
   border-radius: 10px; 
   padding: 5px 10px;  
-
+  box-shadow: 4px 4px 10px black 
 }
 
 main {
   background-color: #eee; 
   width: 90%;     
-  padding: 20px;
+  padding: 15px;
+  box-shadow: 4px 4px 10px black;
+  overflow: hidden; 
 }
-div {
+form > div {
+  display: flex;
   margin: 20px; 
+  position: relative;
+}
+form { 
+  display: flex;
+  flex-direction: column;
 }
 label {
   font-size: 30px;
-}
+  flex: 1;
+  margin-right: 10px;  
+} 
+
 input {
-  height: 100%; 
-  width: 70%;
+  background-color: #eee;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 20px;
+  flex: 2;
+  padding-left: 10px;;
+} 
+
+.height::after { 
+  content: 'cm';
+  font-size: 20px;
+  position: absolute;
+  right: 20px;       
+  top: 5px;   
 }
 
+.weight::after {
+  content: 'kg';
+  font-size: 20px;
+  position: absolute;
+  right: 20px;       
+  top: 5px;   
+}
+
+button {
+  margin: auto; 
+  font-size: 3vw;       
+  width: 30%;  
+  height: 70px; 
+  background-color: #2ae7d7; 
+  border: 1px solid black;
+  box-shadow: 4px 4px 3px black;
+  border-radius: 10px ;
+}
 .image-radio {
   display: none;
 }
 .image-radio + label {
   cursor: pointer;
+  flex: none; 
+}
+.image-radio + label:hover{
+  filter: invert(10%);  
+} 
+.image-radio:checked + label {
+  outline: 1px solid #222;    
+} 
+
+.container-result {
+  margin-top: 20px;
+  padding: 10px;  
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center; 
+}
+.result {
+  width: 50%;
+  margin-bottom: 20px; 
+}
+.about {
+  margin-bottom: 20px;
+}
+div > img {
+  width: 78vw;       
 }
 
-.image-radio:checked + label {
-  outline: 2px solid blue;
+@media screen and (width < 446px) {
+  input {
+    font-size: 4vw; 
+  }
+  label {
+    font-size: 5vw;
+  }
+  .height::after { 
+    font-size: 4vw;
+    right: 20px;       
+    top: 5px;   
+  }
+  
+  .weight::after {
+    font-size: 4vw; 
+    right: 20px;       
+    top: 5px;   
+  }
 }

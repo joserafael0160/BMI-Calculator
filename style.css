@@ -97,12 +97,13 @@ button {
   margin-top: 20px;
   padding: 10px;  
   border: 1px solid black;
+  border-radius: 6px;
+  background-color: #fff; 
   display: flex;
   flex-wrap: wrap;  
-  justify-content: center; 
+  justify-content: space-between; 
 }
 .result {
-  width: 50%;
   margin-bottom: 20px; 
 }
 .about {

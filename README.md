@@ -14,7 +14,7 @@ And this is the result
 
 - This is what it looks like on an iPhone SE with a resoution of 375x667:
 
-![](resources/image-in-iPhone-SE.png)
+![](resources/image-in-iPhoneSE.png)
 
 - This is what it looks like with the result:
 

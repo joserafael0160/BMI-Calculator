@@ -13,7 +13,7 @@
 <body>
   <h1>BMI Calculator</h1>
   <main>
-    <form>
+    <form id="bmi-form">
       <div>
         <label for="age">Age</label>
         <input type="number" id="age" min="10"  required placeholder="Enter your age">
@@ -27,9 +27,9 @@
         <input type="number" id="weight" min="10" max="200" step="0.1" required placeholder="Enter your weight">
       </div>
       <div>
-        <input type="radio" id="man" class="image-radio" name="sex">
+        <input type="radio" id="man" class="image-radio" name="sex" value="man">
         <label for="man"><img src="resources/icon-man.png" alt="man"></label>
-        <input type="radio" id="woman" class="image-radio" name="sex">
+        <input type="radio" id="woman" class="image-radio" name="sex" value="woman">
         <label for="woman"><img src="resources/icon-woman.png" alt="woman"></label>
       </div>
       <button type="submit">Calculate BMI</button>
@@ -54,5 +54,6 @@
       </div>
     </div>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -27,7 +27,8 @@ main {
   width: 90%;     
   padding: 15px;
   box-shadow: 4px 4px 10px black;
-  overflow: hidden; 
+  overflow: hidden;  
+  border-radius:5px;
 }
 form > div {
   display: flex;
@@ -43,6 +44,9 @@ label {
   flex: 1;
   margin-right: 10px;  
 } 
+li {
+  list-style: none; 
+}
 
 input {
   background-color: #eee;
